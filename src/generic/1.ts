@@ -4,7 +4,7 @@
 */
 
 function getPromise<T extends [string, number]>(): Promise<T> {
-  return new Promise<T>((resolve) => {
+  return new Promise((resolve) => {
     resolve(['Text', 50] as T);
   });
 }
